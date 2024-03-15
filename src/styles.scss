@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.strength-indicator {
+  display: flex;
+  height: 5px;
+
+  .strength-indicator__item {
+    height: inherit;
+    width: 33%;
+
+    &.gray {
+      background-color: #e4e7ec;
+    }
+
+    &.red {
+      background-color: #f4471f;
+    }
+
+    &.yellow {
+      background-color: #f7cf20;
+    }
+
+    &.green {
+      background-color: #3db724;
+    }
+  }
+}
